@@ -1,0 +1,299 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* reset */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+    height: 100%;
+    background: #fff;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #373a3c;
+    font-size: 16px;
+	padding: 0rem;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 1.5;
+	max-width: 210mm;
+	min-height: 100%;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+}
+
+header {
+	display: block;
+    padding: 5em 0 0;
+    background-color: #fff;
+	border-bottom: .07em solid #eee;
+}
+
+menu {
+    font-family: 'futura', sans-serif; 
+    color: #808080;
+    background-color: #fff;
+    text-decoration: none; 
+    font-size: 100%;
+    display: inline;
+}
+
+.menu_icon:before {
+    font-family: "Times New Roman", serif;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    font-size: 120%;
+    content: "\2261";
+    cursor: pointer;
+}
+
+.af_menu_icon:before {
+    font-family: "Times New Roman", serif;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    font-size: 120%;
+    content: "\00D7";
+    cursor: pointer;
+}
+
+.iconup:before {
+    content: "\2912";
+}
+
+.namelogo {
+    font-family: 'futura', sans-serif;
+	font-size: 120%;
+	color: #333;
+	vertical-align: bottom;
+}
+
+a.namelogo:hover {
+	color: #333;
+}
+
+@media all {
+	html {
+		font-size: 16px;
+	}
+	body>* {
+		font-size: 90%;
+		margin-left: 7.5rem;
+		margin-right: 7.5rem;
+	}
+}
+
+@media all and (max-width:840px) {
+	html {
+		font-size: 15px;
+	}
+	body>* {
+		margin-left: 5.5rem;
+		margin-right: 5.5rem;
+	}
+}
+
+@media all and (max-width:760px) {
+	body>* {
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+	}
+}
+
+@media all and (max-width:580px) {
+	body>* {
+		margin: .7rem 1.5rem 0 1.5rem;
+	}
+}
+
+.subtitle {
+    font-family: "Heiti SC";
+    color: #808080;
+    padding: 1.8rem 0 0.6rem;
+}
+
+.footer-subtitle {
+    font-family: "Heiti SC";
+    color: #808080;
+    padding: 0rem;
+}
+
+h1 {
+    font-size: 1.8rem; }
+
+h2 {
+font-size: 1.4rem; }
+
+h3 {
+font-size: 1.17rem; }
+
+h4 {
+font-size: 1.15rem; }
+
+h5 {
+font-size: 0.9rem; }
+
+h6 {
+font-size: 0.9rem; }
+
+div.content {
+	display: block;
+    padding: 1rem 0;
+    text-align: inherit;
+}
+
+.morecontent {
+    font-family: 'futura', sans-serif;
+    color: #808088;
+    text-decoration: underline;
+}
+
+@media all and (max-width:520px) {
+	div.content {
+		padding: 0;
+	}
+}
+
+footer {
+	display: block;
+    padding: .5rem 0 5.5rem 0;
+    border-top: .07em solid #eee;
+}
+
+aside {
+    font-family: "Heiti SC";
+	font-size: .9em;
+	line-height: .9;
+	color: #333;
+}
+.year {
+    font-family: "Heiti SC";
+	color: #333;
+}
+
+aside em {
+	font-size: .7rem;
+}
+
+p {
+	margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+ul,
+ol {
+	margin-bottom: 1em;
+	padding-left: 1em;
+}
+
+li {
+	line-height: 2em;
+	margin-left: .75em;
+}
+
+table {
+	margin-bottom: 1.5rem;
+	border: 1px solid #e5e5e5;
+	border-collapse: collapse;
+	width: 95%;
+}
+
+td,
+th {
+	text-align: left;
+	padding: .25rem .5rem;
+	border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+	background-color: #f9f9f9;
+}
+
+img {
+	display: block;
+	/*border-radius: 5px;*/
+	max-width: 100%;
+}
+
+a {
+	color: #808080;
+	text-decoration: none;
+}
+
+a:active {
+	color: #777;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+figcaption {
+	font-weight: 400;
+	font-style: italic;
+	font-size: .7em/1.52;
+	line-height: 1.3;
+	color: #666665;
+	outline: 0;
+	z-index: 300;
+	text-align: center;
+}
+
+blockquote {
+	border-left: 3.5px solid #808080;
+	margin: .7em 10px;
+	padding: .7em 20px;
+}
+
+blockquote p {
+	display: inline;
+}
+
+.footer-claim {
+    font-family: 'futura', sans-serif;
+    font-size: 80%;
+    display: block;
+    float: middle;
+}
+
+.profile-picture {
+    max-width: 100%;
+    height: 20%;
+    width: 20%;
+    position: relative;
+    /*margin: -10px 0 0 15px;*/
+    float: right;
+    padding: 0 0 1rem 1rem;
+}
+
+/* code not used */
+code,
+pre {
+	font-family: Menlo, Monaco, 'Courier New', monospace;
+}
+
+code {
+	padding: .25em .25em;
+	background: #f8f8f8;
+	font-size: 90%;
+	margin-bottom: 20px;
+}
+
+pre {
+	font-size: .9rem;
+	background: #f8f8f8;
+	padding: 1em;
+	margin-bottom: 20px;
+	overflow-x: auto;
+	vertical-align: text-bottom;
+}
