@@ -115,27 +115,6 @@ if (!doNotTrack) {
 <h4 id="Reseach Interests" class="subtitle">Research Interests</h2>
 <p>My recent work has focused on the interplay between <b>optimization</b> and <b>machine learning</b>, especially in stochastic optimization and min-max optimization.</p>
 
-<script>
-function absCBO() {
-    var x = document.getElementById("abs-consensus");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-</script>
-
-<script>
-function absDGM() {
-	var x = document.getElementById("abs-generative");
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
-}
-</script>
 
 <script>
 function absSUM() {
@@ -159,37 +138,6 @@ function absICM() {
 }
 </script>
 
-<!--
-<p><strong>Gradient-free Consensus-based Global Optimization Method (In Progress)</strong>
-<br>
-Advisor: <a href="https://ins.sjtu.edu.cn/people/shijin/#brief-introduction">Prof. Shi Jin</a> & <a href="http://math.sjtu.edu.cn/faculty/xqzhang/">Prof. Xiaoqun Zhang</a>
-<br>
-[<a id="abs-consensus-button" onclick="absCBO()">abstract</a>]</p>
-<div id="abs-consensus" style="display:none;">
-<blockquote> In optimization problems posed by machine learning and data science, the objective functions are usually not necessarily regular enough. For this issue, we develop a new gradient-free method for global non-convex optimization, 
-		with the knowledge gleaned from the interacting particle system and flock model. Particularly, we sampled different initial parameters of the loss function as “particles”, and described their interactions based on the relative distances 
-		between certain particles and their weighted average. Inspired by statistical physics, we formulated an average weighted by the Gibbs distribution corresponding to the objective function. Under several conditions, it could be proven that 
-		sampling particles would relax towards their weighted average exponentially fast, and such a consensus state would provide a good approximation for the global minima. Now I am working on relevant numerical experiments, especially for non-convex 
-		optimization problems like compressive sensing and logistic regression with l<sub>0</sub> regularization.</blockquote>
-</div>
-
-
-<p><strong>Auto-regressive Graphical Model for Molecular Generation</strong>
-<br>
-Advisor: <a href="http://jianpeng.web.engr.illinois.edu/">Prof. Jian Peng</a>
-<br>
-[<a id="abs-generative-button" onclick="absDGM()">abstract</a>, <a href="https://github.com/zephyr-cai/molecular_generation">code</a>]</p>
-<div id="abs-generative" style="display:none;">
-<blockquote> The recent boom of graphical models extends the domain knowledge ML could exploit, promising potential algorithms to discover and analyze structure in complex distributions. We proposed a new deep framework 
-	of auto-regressive generative model for molecular graph generation. We represented molecules in graphs and formalized the graph generation as a sequential decision process. We further improved the preformance 
-	by designing an innovative generating process with node degree constraints and subgraph generating tokens. Training auto- regressive generative models tends to take time, so I accelerated training by batching graphs 
-	and multiprocessing on CPUs. Our model eventually achieved high performance in similarity metrics comparable to recent state-of-the-art algorithms on the Molecular Sets benchmarking platform. </blockquote>
-</div>
-
-<p><strong>Ealier Projects in Machine Learning and Deep Learning</strong>
-<br>
-[<a href="./profiles/research.pdf">link</a>]</p>
--->
 
 <h4 id="Teaching" class="subtitle">Teaching</h4>
 <p>
