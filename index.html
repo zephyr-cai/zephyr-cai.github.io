@@ -141,12 +141,23 @@ function absICM() {
 }
 </script>
 
+<script>
+function absHAL() {
+	var x = document.getElementById("abs-halpern");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>	
+
 <h4 id="publications" class='subtitle'>Publications</h4>
 <p><b>Stochastic Halpern Iteration with Variance Reduction for Stochastic Monotone Inclusions.</b>
 <br>
 In Proc. <a href="https://neurips.cc/">NeurIPS'22</a>, 2022.
 <br>
-<a id="abs-halpern-button" onclick="absSUM()" class="morecontent">abstract</a> / <a href="https://arxiv.org/pdf/2203.09436.pdf" class="morecontent">arXiv</a></p>
+<a id="abs-halpern-button" onclick="absHAL()" class="morecontent">abstract</a> / <a href="https://arxiv.org/pdf/2203.09436.pdf" class="morecontent">arXiv</a></p>
 <div id="abs-halpern" style="display:none;">
 <blockquote>We study stochastic monotone inclusion problems, which widely appear in machine learning applications, 
 	including robust regression and adversarial learning. We propose novel variants of stochastic Halpern iteration with recursive variance reduction. 
