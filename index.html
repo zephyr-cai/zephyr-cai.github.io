@@ -155,6 +155,17 @@ function absHAL() {
 }
 </script>	
 
+<script>
+function absCCD() {
+	var x = document.getElementById("abs-nonconvex-ccd");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>		
+
 <h4 id="publications" class='subtitle'>Publications</h4>
 <p><b>Stochastic Halpern Iteration with Variance Reduction for Stochastic Monotone Inclusions.</b>
 <br>
@@ -171,6 +182,26 @@ In Proc. <a href="https://neurips.cc/">NeurIPS'22</a>, 2022.
 We further show how to couple one of the proposed variants of stochastic Halpern iteration 
 	with a scheduled restart scheme to solve stochastic monotone inclusion problems with \({\mathcal{O}}(\frac{\log(1/\epsilon)}{\epsilon^2})\)
 	stochastic operator evaluations under additional sharpness or strong monotonicity assumptions.
+</blockquote>
+</div>
+<p><b>Cyclic Block Coordinate Descent With Variance Reduction for Composite Nonconvex Optimization.</b>
+<br>
+In Proc. <a href="https://icml.cc/">ICML'23</a>, 2023.
+<br>
+<a id="abs-nonconvex-ccd-button" onclick="absCCD()" class="morecontent">abstract</a> / <a href="https://arxiv.org/pdf/2212.05088.pdf" class="morecontent">arXiv</a></p>
+<div id="abs-nonconvex-ccd" style="display:none;">
+<blockquote>Nonconvex optimization is central in solving many machine learning problems, in which block-wise structure is
+commonly encountered. In this work, we propose cyclic block coordinate methods for nonconvex optimization problems
+with non-asymptotic gradient norm guarantees. Our convergence analysis is based on a gradient Lipschitz condition
+with respect to a Mahalanobis norm, inspired by a recent progress on cyclic block coordinate methods. In deterministic
+settings, our convergence guarantee matches the guarantee of (full-gradient) gradient descent, but with the gradient
+Lipschitz constant being defined w.r.t. a Mahalanobis norm. In stochastic settings, we use recursive variance reduction to
+decrease the per-iteration cost and match the arithmetic operation complexity of current optimal stochastic full-gradient
+methods, with a unified analysis for both finite-sum and infinite-sum cases. We prove a faster linear convergence result
+when a Polyak-Łojasiewicz (PŁ) condition holds. To our knowledge, this work is the first to provide non-asymptotic
+convergence guarantees — variance-reduced or not — for a cyclic block coordinate method in general composite (smooth
++ nonsmooth) nonconvex settings. Our experimental results demonstrate the efficacy of the proposed cyclic scheme in
+training deep neural nets.
 </blockquote>
 </div>
 	
