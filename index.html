@@ -160,16 +160,53 @@ function absCCD() {
 		x.style.display = "none";
 	}
 }
-</script>		
+</script>
 
-<h4 id="publications" class='subtitle'>Publications</h4>
+<script>
+function absShuffledSGD() {
+	var x = document.getElementById("abs-shuffled-sgd");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>
+
+<h4 id="publications" class='subtitle'>Recent Papers</h4>
+<p><b>Empirical Risk Minimization with Shuffled SGD: A Primal-Dual Perspective and Improved Bounds.</b>
+<br>
+Xufeng Cai, <a href="https://ericlincc.com/">Cheuk Yin Lin</a>, <a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a>.
+<br>
+Preprint, 2023.
+<br>
+<a id="abs-shuffled-sgd-button" onclick="absShuffledSGD()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2306.12498" class="morecontent">arXiv</a></p>
+<div id="abs-shuffled-sgd" style="display:none;">
+<blockquote>Stochastic gradient descent (SGD) is perhaps the most prevalent optimization method in modern
+machine learning. Contrary to the empirical practice of sampling from the datasets without replacement and
+with (possible) reshuffling at each epoch, the theoretical counterpart of SGD usually relies on the assumption
+of sampling with replacement. It is only very recently that SGD with sampling without replacement – shuffled SGD – has been analyzed. For convex finite sum problems with n components and under the
+\(L\)-smoothness assumption for each component function, there are matching upper and lower bounds, under
+sufficiently small – \(\mathcal{O}(\frac{1}{nL})\) – step sizes. Yet those bounds appear too pessimistic – in fact, the predicted
+performance is generally no better than for full gradient descent – and do not agree with the empirical
+observations. In this work, to narrow the gap between the theory and practice of shuffled SGD, we sharpen
+the focus from general finite sum problems to empirical risk minimization with linear predictors. This
+allows us to take a primal-dual perspective and interpret shuffled SGD as a primal-dual method with cyclic
+coordinate updates on the dual side. Leveraging this perspective, we prove a fine-grained complexity bound
+that depends on the data matrix and is never worse than what is predicted by the existing bounds. Notably,
+our bound can predict much faster convergence than the existing analyses – by a factor of the order of \(\sqrt{n}\)
+in some cases. We empirically demonstrate that on common machine learning datasets our bound is indeed
+much tighter. We further show how to extend our analysis to convex nonsmooth problems, with similar improvements.
+</blockquote>
+</div>
+
 <p><b>Cyclic Block Coordinate Descent With Variance Reduction for Composite Nonconvex Optimization.</b>
 <br>
 Xufeng Cai, <a href="https://sites.google.com/view/chaobing-song/home">Chaobing Song</a>, <a href="https://pages.cs.wisc.edu/~swright/">Stephen J. Wright</a>, <a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a>.
 <br>
 In Proc. <a href="https://icml.cc/">ICML'23</a>, 2023.
 <br>
-<a id="abs-nonconvex-ccd-button" onclick="absCCD()" class="morecontent">abstract</a> / <a href="https://arxiv.org/pdf/2212.05088.pdf" class="morecontent">arXiv</a></p>
+<a id="abs-nonconvex-ccd-button" onclick="absCCD()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2212.05088" class="morecontent">arXiv</a></p>
 <div id="abs-nonconvex-ccd" style="display:none;">
 <blockquote>Nonconvex optimization is central in solving many machine learning problems, in which block-wise structure is
 commonly encountered. In this work, we propose cyclic block coordinate methods for nonconvex optimization problems
@@ -192,7 +229,7 @@ Xufeng Cai, <a href="https://sites.google.com/view/chaobing-song/home">Chaobing 
 <br>
 In Proc. <a href="https://neurips.cc/">NeurIPS'22</a>, 2022.
 <br>
-<a id="abs-halpern-button" onclick="absHAL()" class="morecontent">abstract</a> / <a href="https://arxiv.org/pdf/2203.09436.pdf" class="morecontent">arXiv</a></p>
+<a id="abs-halpern-button" onclick="absHAL()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2203.09436" class="morecontent">arXiv</a></p>
 <div id="abs-halpern" style="display:none;">
 <blockquote>We study stochastic monotone inclusion problems, which widely appear in machine learning applications, 
 	including robust regression and adversarial learning. We propose novel variants of stochastic Halpern iteration with recursive variance reduction. 
