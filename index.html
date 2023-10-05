@@ -175,7 +175,42 @@ function absShuffledSGD() {
 }
 </script>
 
+<script>
+function absFiniteHalpern() {
+	var x = document.getElementById("abs-finite-Halpern");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>
+
+
 <h4 id="publications" class='subtitle'>Recent Papers</h4>
+(<sup>*</sup> denotes equal contribution)
+<br>
+
+<p><b>Variance Reduced Halpern Iteration for Finite-Sum Monotone Inclusions.</b>
+<br>
+Xufeng Cai<sup>*</sup>, <a href="https://ahmetalacaoglu.github.io/">Ahmet Alacaoglu<sup>*</sup></a>, <a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a>.
+<br>
+Preprint, 2023.
+<br>
+<a id="abs-finite-Halpern-button" onclick="absFiniteHalpern()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2310.02987" class="morecontent">arXiv</a></p>
+<div id="abs-finite-Halpern" style="display:none;">
+<blockquote>Machine learning approaches relying on such criteria as adversarial robustness or multi-agent settings have raised the need for solving game-theoretic equilibrium problems. 
+Of particular relevance to these applications are methods targeting finite-sum structure, which generically arises in empirical variants of learning problems in these contexts. 
+Further, methods with computable approximation errors are highly desirable, as they provide verifiable exit criteria. Motivated by these applications, 
+we study finite-sum monotone inclusion problems, which model broad classes of equilibrium problems. 
+Our main contributions are variants of the classical Halpern iteration that employ variance reduction to obtain improved complexity guarantees in which \(n\) component operators in the finite sum are ``on average'' 
+either cocoercive or Lipschitz continuous and monotone, with parameter \(L\). The resulting oracle complexity of our methods, which provide guarantees for the last iterate and for a (computable) operator norm residual, 
+is \(\widetilde{\mathcal{O}}( n + \sqrt{n}L\varepsilon^{-1})\), which improves upon existing methods by a factor up to \(\sqrt{n}\). 
+This constitutes the first variance reduction-type result for general finite-sum monotone inclusions and for more specific problems such as convex-concave optimization when operator norm residual is the optimality measure. 
+We further argue that, up to poly-logarithmic factors, this complexity is unimprovable in the monotone Lipschitz setting; i.e., the provided result is near-optimal.
+</blockquote>
+</div>
+
 <p><b>Empirical Risk Minimization with Shuffled SGD: A Primal-Dual Perspective and Improved Bounds.</b>
 <br>
 Xufeng Cai, <a href="https://ericlincc.com/">Cheuk Yin Lin</a>, <a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a>.
