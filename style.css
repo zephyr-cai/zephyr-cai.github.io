@@ -156,7 +156,7 @@ div.content {
     text-decoration: underline;
 }
 
-@media all and (max-width:720px) {
+@media all and (max-width:520px) {
 	div.content {
 		padding: 0;
 	}
