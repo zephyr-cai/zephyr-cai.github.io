@@ -197,6 +197,17 @@ function absCL() {
 }
 </script>
 
+<script>
+function absHyperZero() {
+	var x = document.getElementById("abs-hyperzero");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>
+
 
 <h4 id="publications" class='subtitle'>Recent Papers</h4><small>(chronologically, * denotes equal contribution)</small>
 
@@ -216,6 +227,32 @@ the best known oracle complexity bounds for the average iterate, for both classe
 which can be seen as interpolating between the last iterate and the average iterate guarantees. Additionally, we discuss how our results can be generalized to variants of studied incremental methods with permuted ordering of updates. 
 Our results generalize last iterate guarantees for incremental methods compared to state of the art, as such results were previously known only for overparameterized linear models, 
 which correspond to convex quadratic problems with infinitely many solutions.
+</blockquote>
+</div>
+
+<p><b>HyperZero: A Customized End-to-End Auto-Tuning System for Recommendation with Hourly Feedback.</b>
+<br>
+Xufeng Cai*, <a href="https://www.linkedin.com/in/ziwei-guan/">Ziwei Guan*</a>, <a href="https://www.linkedin.com/in/lei-yuan-7b490b19/">Lei Yuan*</a>, <a href="https://www.linkedin.com/in/aliselmanaydin/">Ali Selman Aydin</a>, 
+<a href="https://www.linkedin.com/in/tengyu-xu-5826a8109/">Tengyu Xu</a>, <a href="https://www.linkedin.com/in/boyingliu/">Boying Liu</a>, <a href="https://www.linkedin.com/in/wenbo-ren-ab8a20126/?locale=en_US">Wenbo Ren</a>, 
+<a href="https://www.linkedin.com/in/renkai-xiang-99056884/">Renkai Xiang</a>, <a href="https://www.linkedin.com/in/hesongyi/">Songyi He</a>, <a href="https://www.linkedin.com/in/hyang-aiml/">Haichuan Yang</a>, Serena Li, 
+<a href="https://www.linkedin.com/in/mingze-gao-349a3273/">Mingze Gao</a>, <a href="https://www.linkedin.com/in/yue-weng-32918147/">Yue Weng</a>, <a href="https://www.linkedin.com/in/ji-liu-05343a28/">Ji Liu</a>/}.
+<br>
+In Proc. <a href="https://kdd2025.kdd.org/">KDD'25</a>, 2025.
+<br>
+<a id="abs-hyperzero-button" onclick="absHyperZero()" class="morecontent">abstract</a> / <a class="morecontent">arXiv coming soon!</a></p>
+<div id="abs-hyperzero" style="display:none;">
+<blockquote>Modern recommendation systems can be broadly divided into two key stages: the ranking stage, where the system predicts the various user's engagements 
+(e.g., the click through rate, the like rate, the follow rate, the watch time), and the value model stage, which aggregates these predictive scores through a function 
+(e.g., a linear combination defined by a weight vector) to measure the value of each content by a single score number. 
+Both stages play roughly equal importance in real industrial systems; how to optimize the model weights for the second stage still lack systematical study. 
+This paper focuses on how to optimize the second stage through auto-tuning technology. Although general auto-tuning system/solution, both from established production practices and open-source solutions, 
+can address this problem, they often require weeks or even months to identify a feasible solution. This prolonged tuning process is unacceptable in production environments of recommendation systems, 
+as suboptimal value models can severely degrade user experience and negatively impact company revenue. An effective auto-tuning solution is required to identify a viable model within a matter of 2-3 days, 
+rather than the extended timelines typically associated with existing approaches. 
+In this paper, we introduce a practical auto-tuning system named HyperZero that addresses these time constraints while effectively solving the unique challenges inherent in modern recommendation systems. 
+Moreover, this approach has the potential to be expanded to broader tuning tasks within recommendation systems. 
+This system has been empirically validated, demonstrating significant improvements in key topline metrics on a large scale video platform (with hundred of millions DAU), 
+including enhanced user experience indicators, and revenue growth, following its deployment across diverse settings.
 </blockquote>
 </div>
 
