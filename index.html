@@ -211,22 +211,24 @@ function absHyperZero() {
 
 <h4 id="publications" class='subtitle'>Recent Papers</h4><small>(chronologically, * denotes equal contribution)</small>
 
-<p><b>Last Iterate Convergence of Incremental Methods and Applications in Continual Learning.</b>
+<p><b>Last Iterate Convergence of Incremental Methods as a Model of Forgetting.</b>
 <br>
 Xufeng Cai, <a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a>.
 <br>
-arXiv preprint, arXiv:2403.06873, 2024.
+In Proc. <a href="https://iclr.cc/">ICLR'25</a>, 2025.
 <br>
 <a id="abs-CL-button" onclick="absCL()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2403.06873" class="morecontent">arXiv</a></p>
 <div id="abs-CL" style="display:none;">
-<blockquote>Incremental gradient methods and incremental proximal methods are a fundamental class of optimization algorithms used for solving finite sum problems, broadly studied in the literature. 
-Yet, when it comes to their convergence guarantees, nonasymptotic (first-order or proximal) oracle complexity bounds have been obtained fairly recently, almost exclusively applying to the average iterate. 
-Motivated by applications in continual learning, we obtain the first convergence guarantees for the last iterate of both incremental gradient and incremental proximal methods, 
-in general convex smooth (for both) and convex Lipschitz (for the proximal variants) settings. Our oracle complexity bounds for the last iterate nearly match (i.e., match up to a square-root-log or a log factor) 
-the best known oracle complexity bounds for the average iterate, for both classes of methods. We further obtain generalizations of our results to weighted averaging of the iterates with increasing weights, 
-which can be seen as interpolating between the last iterate and the average iterate guarantees. Additionally, we discuss how our results can be generalized to variants of studied incremental methods with permuted ordering of updates. 
-Our results generalize last iterate guarantees for incremental methods compared to state of the art, as such results were previously known only for overparameterized linear models, 
-which correspond to convex quadratic problems with infinitely many solutions.
+<blockquote>Incremental gradient and incremental proximal methods are a fundamental class of optimization algorithms used for solving finite sum problems, 
+	broadly studied in the literature. Yet, without strong convexity, their convergence guarantees have primarily been established for the ergodic (average) iterate. 
+	We establish the first nonasymptotic convergence guarantees for the last iterate of both incremental gradient and incremental proximal methods, 
+	in general convex smooth (for both) and convex Lipschitz (for the proximal variants) settings. Our oracle complexity bounds for the last iterate nearly match
+	(i.e., match up to a square-root-log or a log factor) the best known oracle complexity bounds for the average iterate, for both classes of methods. 
+	We further obtain generalizations of our results to weighted averaging of the iterates with increasing weights and for randomly permuted ordering of updates. 
+	We study last iterate convergence of the incremental proximal method as a mathematical abstraction of forgetting in continual learning and prove a lower bound 
+	that certifies that a large amount of regularization is crucial to mitigating catastrophic forgetting---one of the key considerations in continual learning.
+	Our results generalize last iterate guarantees for incremental methods compared to state of the art, as such results were previously known only for overparameterized linear models, 
+	which correspond to convex quadratic problems with infinitely many solutions.
 </blockquote>
 </div>
 
@@ -422,7 +424,7 @@ Coursework for <i>Numerical Methods for Differential Equations</i>, Spring 2019
 	</div>
 </footer>
 <div style="text-align: center;">
-<p class="footer-claim">&copy; 2023 Xufeng Cai.</p>
+<p class="footer-claim">&copy; 2025 Xufeng Cai.</p>
 </div>
 </body>
 </html>
