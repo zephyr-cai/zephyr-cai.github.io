@@ -207,14 +207,76 @@ function absOsborne() {
 }
 </script>
 
+<script>
+function absAduca() {
+	var x = document.getElementById("abs-aduca");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>
+
+<script>
+function absOneshot() {
+	var x = document.getElementById("abs-oneshot");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script
+
 
 <h4 id="publications" class='subtitle'>Recent Papers</h4><small>(reverse chronological, * denotes equal contribution)</small>
+
+<p><b>OneShot: Index-in-Ranking with Neural Scoring for Large-Scale Retrieval.</b>
+<br>
+<a href="https://www.linkedin.com/in/ziwei-li-a37b3b10b/">Ziwei Li</a>, <a href="https://shuyaoli.github.io/">Shuyao Li</a>, Xufeng Cai, 
+	<a href="https://www.linkedin.com/in/xue-zou/">Xue Zou</a>, <a href="https://www.linkedin.com/in/yiming-ma-87335927/">Yiming Ma</a>, 
+	Huiting Lu, Wujie Yan, <a href="https://www.linkedin.com/in/zhichen-zhao-3410a3292/">Zhichen Zhao</a>, <a href="https://scholar.google.com/citations?user=UuYkhSkAAAAJ&hl=en">Yang Lu</a>, <a href="https://www.linkedin.com/in/zhejoewang/">Zhe Wang</a>, 
+	<a href="https://www.linkedin.com/in/rui-ruby-luo-3b75381b/">Rui Luo</a>, <a href="https://www.linkedin.com/in/zhengyu-s-9470117a/">Zhengyu Su</a>, 
+	<a href="https://www.linkedin.com/in/dan-zhang-19283328/">Dan Zhang</a>, <a href="https://www.linkedin.com/in/yimin-tan-307b7716/">Yimin Tan</a>, <a href="https://www.linkedin.com/in/ji-liu-05343a28/">Ji Liu</a>.
+<br>
+arXiv preprint, arXiv:2607.27475, 2026.
+<br>
+<a id="abs-oneshot-button" onclick="absOneshot()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2607.27475" class="morecontent">arXiv</a></p>
+<div id="abs-oneshot" style="display:none;">
+<blockquote>In modern recommendation systems, retrieval serves as a primary stage responsible for filtering billions of candidate items down to thousands prior to refined ranking. 
+	To make this massive search effective and efficient, the system relies on ranking accuracy and indexing efficiency. However, these two objectives are traditionally misaligned: 
+while the former optimizes for the alignment between ranking predictions and user behavior, the latter optimizes for a structural grouping of item representations which enables fast search among billions of candidates. 
+	Thus, despite extensive efforts to scale up interaction modeling for retrieval, they remain fundamentally limited by the structural misalignment between the ranking objectives and the proximity-learned index. 
+	In this work, we address this long-standing dichotomy by proposing a new holistic retrieval framework, OneShot. It is an end-to-end, in-model index learning framework that natively aligns index learning with ranking objectives. 
+	Using this joint learning as a structural foundation, OneShot pushes the boundaries of retrieval expressiveness by scaling interaction modeling with neural scoring beyond the persistent dot-product bottleneck. 
+	OneShot is fully deployed in Instagram's industrial short-video recommendation system, driving significant wins in user daily sessions, engagement, and time-spent. 
+	Additionally, OneShot achieves a 20% recall gain at the operational ranking volume and a 10x efficiency improvement at an equivalent recall level.
+</blockquote>
+</div>
+
+<p><b>Adaptive Delayed-Update Cyclic Algorithm for Variational Inequalities.</b>
+<br>
+<a href="https://yiwei3.github.io/">Yi Wei</a>, Xufeng Cai, <a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a>.
+<br>
+In Proc. <a href="https://neurips.cc/">NeurIPS'26</a>, 2026.
+<br>
+<a id="abs-aduca-button" onclick="absAduca()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2603.29128" class="morecontent">arXiv</a></p>
+<div id="abs-aduca" style="display:none;">
+<blockquote>Cyclic block coordinate methods are a fundamental class of first-order algorithms, widely used in practice for their simplicity and strong empirical performance. 
+	Yet, their theoretical behavior remains challenging to explain, and setting their step sizes -- beyond classical coordinate descent for minimization -- typically requires careful tuning or line-search machinery. 
+	In this work, we develop ADUCA (Adaptive Delayed-Update Cyclic Algorithm), a cyclic algorithm addressing a broad class of Minty variational inequalities with monotone Lipschitz operators. 
+	ADUCA is parameter-free: it requires no global or block-wise Lipschitz constants and uses no per-epoch line search, except at initialization. 
+	A key feature of the algorithm is using operator information delayed by a full cycle, which makes the algorithm compatible with parallel and distributed implementations, and attractive due to weakened synchronization requirements across blocks. 
+	We prove that ADUCA attains (near) optimal global oracle complexity as a function of target error \(\epsilon\)>0, scaling with \(1/\epsilon\) for monotone operators, or with \(\log^2(1/\epsilon)\) for operators that are strongly monotone.
+</blockquote>
+</div>
 
 <p><b>Near-Linear Runtime for a Classical Matrix Preconditioning Algorithm.</b>
 <br>
 Xufeng Cai, <a href="https://jasonaltschuler.github.io/">Jason M. Altschuler</a>, <a href="http://www.jelena-diakonikolas.com/">Jelena Diakonikolas</a>.
 <br>
-<a href="https://dl.acm.org/journal/jacm">Journal of the ACM (JACM)</a>, to appear, 2025+.
+<a href="https://dl.acm.org/journal/jacm">Journal of the ACM (JACM)</a>, 73(1), pp. 1-25, 2026.
 <br>
 <a id="abs-osborne-button" onclick="absOsborne()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2503.16312" class="morecontent">arXiv</a></p>
 <div id="abs-osborne" style="display:none;">
@@ -249,31 +311,31 @@ In Proc. <a href="https://iclr.cc/">ICLR'25</a>, 2025.
 </blockquote>
 </div>
 
-<p><b>HyperZero: A Customized End-to-End Auto-Tuning System for Recommendation with Hourly Feedback.</b>
-<br>
-Xufeng Cai*, <a href="https://www.linkedin.com/in/ziwei-guan/">Ziwei Guan*</a>, <a href="https://www.linkedin.com/in/lei-yuan-7b490b19/">Lei Yuan*</a>, <a href="https://www.linkedin.com/in/aliselmanaydin/">Ali Selman Aydin*</a>, 
-<a href="https://www.linkedin.com/in/tengyu-xu-5826a8109/">Tengyu Xu</a>, <a href="https://www.linkedin.com/in/boyingliu/">Boying Liu</a>, <a href="https://www.linkedin.com/in/wenbo-ren-ab8a20126/?locale=en_US">Wenbo Ren</a>, 
-<a href="https://www.linkedin.com/in/renkai-xiang-99056884/">Renkai Xiang</a>, <a href="https://www.linkedin.com/in/hesongyi/">Songyi He</a>, <a href="https://www.linkedin.com/in/hyang-aiml/">Haichuan Yang</a>, Serena Li, 
-<a href="https://www.linkedin.com/in/mingze-gao-349a3273/">Mingze Gao</a>, <a href="https://www.linkedin.com/in/yue-weng-32918147/">Yue Weng</a>, <a href="https://www.linkedin.com/in/ji-liu-05343a28/">Ji Liu</a>.
-<br>
-In Proc. <a href="https://kdd2025.kdd.org/">KDD'25</a>, 2025.
-<br>
-<a id="abs-hyperzero-button" onclick="absHyperZero()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2501.18126" class="morecontent">arXiv</a></p>
-<div id="abs-hyperzero" style="display:none;">
-<blockquote>Modern recommendation systems can be broadly divided into two key stages: the ranking stage, where the system predicts the various user's engagements 
-(e.g., the click through rate, the like rate, the follow rate, the watch time), and the value model stage, which aggregates these predictive scores through a function 
-(e.g., a linear combination defined by a weight vector) to measure the value of each content by a single score number. 
-Both stages play roughly equal importance in real industrial systems; how to optimize the model weights for the second stage still lack systematical study. 
-This paper focuses on how to optimize the second stage through auto-tuning technology. Although general auto-tuning system/solution, both from established production practices and open-source solutions, 
-can address this problem, they often require weeks or even months to identify a feasible solution. This prolonged tuning process is unacceptable in production environments of recommendation systems, 
-as suboptimal value models can severely degrade user experience and negatively impact company revenue. An effective auto-tuning solution is required to identify a viable model within a matter of 2-3 days, 
-rather than the extended timelines typically associated with existing approaches. 
-In this paper, we introduce a practical auto-tuning system named HyperZero that addresses these time constraints while effectively solving the unique challenges inherent in modern recommendation systems. 
-Moreover, this approach has the potential to be expanded to broader tuning tasks within recommendation systems. 
-This system has been empirically validated, demonstrating significant improvements in key topline metrics on a large scale video platform (with hundred of millions DAU), 
-including enhanced user experience indicators, and revenue growth, following its deployment across diverse settings.
-</blockquote>
-</div>
+// <p><b>HyperZero: A Customized End-to-End Auto-Tuning System for Recommendation with Hourly Feedback.</b>
+// <br>
+// Xufeng Cai*, <a href="https://www.linkedin.com/in/ziwei-guan/">Ziwei Guan*</a>, <a href="https://www.linkedin.com/in/lei-yuan-7b490b19/">Lei Yuan*</a>, <a href="https://www.linkedin.com/in/aliselmanaydin/">Ali Selman Aydin*</a>, 
+// <a href="https://www.linkedin.com/in/tengyu-xu-5826a8109/">Tengyu Xu</a>, <a href="https://www.linkedin.com/in/boyingliu/">Boying Liu</a>, <a href="https://www.linkedin.com/in/wenbo-ren-ab8a20126/?locale=en_US">Wenbo Ren</a>, 
+// <a href="https://www.linkedin.com/in/renkai-xiang-99056884/">Renkai Xiang</a>, <a href="https://www.linkedin.com/in/hesongyi/">Songyi He</a>, <a href="https://www.linkedin.com/in/hyang-aiml/">Haichuan Yang</a>, Serena Li, 
+// <a href="https://www.linkedin.com/in/mingze-gao-349a3273/">Mingze Gao</a>, <a href="https://www.linkedin.com/in/yue-weng-32918147/">Yue Weng</a>, <a href="https://www.linkedin.com/in/ji-liu-05343a28/">Ji Liu</a>.
+// <br>
+// In Proc. <a href="https://kdd2025.kdd.org/">KDD'25</a>, 2025.
+// <br>
+// <a id="abs-hyperzero-button" onclick="absHyperZero()" class="morecontent">abstract</a> / <a href="https://arxiv.org/abs/2501.18126" class="morecontent">arXiv</a></p>
+// <div id="abs-hyperzero" style="display:none;">
+// <blockquote>Modern recommendation systems can be broadly divided into two key stages: the ranking stage, where the system predicts the various user's engagements 
+// (e.g., the click through rate, the like rate, the follow rate, the watch time), and the value model stage, which aggregates these predictive scores through a function 
+// (e.g., a linear combination defined by a weight vector) to measure the value of each content by a single score number. 
+// Both stages play roughly equal importance in real industrial systems; how to optimize the model weights for the second stage still lack systematical study. 
+// This paper focuses on how to optimize the second stage through auto-tuning technology. Although general auto-tuning system/solution, both from established production practices and open-source solutions, 
+// can address this problem, they often require weeks or even months to identify a feasible solution. This prolonged tuning process is unacceptable in production environments of recommendation systems, 
+// as suboptimal value models can severely degrade user experience and negatively impact company revenue. An effective auto-tuning solution is required to identify a viable model within a matter of 2-3 days, 
+// rather than the extended timelines typically associated with existing approaches. 
+// In this paper, we introduce a practical auto-tuning system named HyperZero that addresses these time constraints while effectively solving the unique challenges inherent in modern recommendation systems. 
+// Moreover, this approach has the potential to be expanded to broader tuning tasks within recommendation systems. 
+// This system has been empirically validated, demonstrating significant improvements in key topline metrics on a large scale video platform (with hundred of millions DAU), 
+// including enhanced user experience indicators, and revenue growth, following its deployment across diverse settings.
+// </blockquote>
+// </div>
 
 <p><b>Tighter Convergence Bounds for Shuffled SGD via Primal-Dual Perspective.</b>
 <br>
